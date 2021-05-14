@@ -6,7 +6,9 @@
 
 html, body {
     border: 3px solid white;
-    background-color: antiquewhite;
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     height: 100%;
     width: 100%;
     overflow: auto;
@@ -31,8 +33,6 @@ main {
 
 header {
     padding: 10px 25px;
-    position: -webkit-sticky;
-    
 }
 
 .hero {
@@ -43,15 +43,10 @@ header {
     background-attachment: fixed;
 }
 
-.hero-text {
-    text-align: center;
-    padding: 0 200px;
-}
+.about, .skills, .contact {
 
-.about {
-    padding-top: 25px;
     padding-bottom: 25px;
-
+    background-color: antiquewhite;
 }
 
 .about-title, .skills-title {
