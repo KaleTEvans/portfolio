@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    border: 3px solid white;
+    background-color: antiquewhite;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+html,body:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: .0001px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 3px solid midnightblue;
+}
+
+main {
+    margin: 5px;
+    height: auto;
+    width: auto;
+}
+
+header {
+    padding: 10px 25px;
+    position: -webkit-sticky;
+    
+}
+
+.hero {
+    padding-top: 250px;
+    padding-bottom: 250px;
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-text {
+    text-align: center;
+    padding: 0 200px;
+}
+
+.about {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+.about-title, .skills-title {
+    border-bottom: 2px solid black;
+}
+
+.about-text {
+    font-size: large;
+    font-weight: 600;
+
+}
+
+.skill-text {
+    font-size: large;
+    font-weight: 600;
+}
+
