@@ -100,4 +100,9 @@ header {
     .about-text, .skill-text{
         font-size: 12px;
     }
+
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
