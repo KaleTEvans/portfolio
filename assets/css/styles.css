@@ -5,7 +5,7 @@
 }
 
 html, body {
-    border: 3px solid white;
+    border: 10px solid white;
     background-image: url('../images/hero.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -22,7 +22,7 @@ html,body:before {
     left: 5px;
     right: 5px;
     bottom: 5px;
-    border: 3px solid midnightblue;
+    border: 10px solid black;
 }
 
 main {
@@ -33,6 +33,10 @@ main {
 
 header {
     padding: 10px 25px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 .hero {
@@ -43,20 +47,18 @@ header {
     background-attachment: fixed;
 }
 
-.about, .skills, .contact {
-
+.about, .skills {
     padding-bottom: 25px;
-    background-color: antiquewhite;
 }
 
 .about-title, .skills-title {
     border-bottom: 2px solid black;
+    
 }
 
 .about-text {
     font-size: large;
     font-weight: 600;
-
 }
 
 .skill-text {
@@ -64,3 +66,38 @@ header {
     font-weight: 600;
 }
 
+.contact {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.contact-title {
+    border-top: 2px solid black;
+
+}
+
+.email-link {
+    width: 45px;
+}
+
+.linkedin, .github, .email {
+    padding: 15px;
+}
+
+.links {
+    padding-top: 35px;
+}
+
+.email {
+    padding-top: 38px;
+}
+
+.linkedin-link:hover, .github-link:hover, .email:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+    .about-text, .skill-text{
+        font-size: 12px;
+    }
+}
