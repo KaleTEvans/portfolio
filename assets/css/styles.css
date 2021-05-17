@@ -38,11 +38,14 @@ header {
 .nav-link {
     text-decoration: none;
     color: black;
+    font-size: large;
+    font-weight: 500;
 }
 
 .nav-link:hover {
     text-decoration: none;
-    color: rgb(53, 47, 47);
+    color: black;
+    opacity: 0.8;
 }
 
 .hero {
@@ -107,14 +110,71 @@ header {
     padding: 100px 0 25px 0;
 }
 
-.project {
-    margin: 0 100px;
+.project-img {
+    margin: 0;
+    padding: 10px 200px;
 }
 
-.project-img {
-    width: 500px;
+.project-box {
+    position: relative;
+    width: 100%;
+}
+
+.project-view {
+    display: block;
+    width: 100%;
     height: auto;
-    margin: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+
+.project-box:hover .overlay {
+    opacity: 0.5;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.card-header {
+    background-color: lightgray;
+}
+
+.btn {
+    color: black;
+}
+
+.btn:hover {
+    color: black;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+    .project-img {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -126,4 +186,5 @@ header {
         padding-top: 150px;
         padding-bottom: 150px;
     }
+
 }

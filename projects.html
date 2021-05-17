@@ -10,29 +10,72 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <header class='container'>
-        <div class='row justify-content-end'>
-            <h5 class='col-md-1 col-sm-3 mb-0'>
-                <a href='./index.html' class='nav-link'>Home</a>
-            </h5>
-            <h5 class='col-md-1 col-sm-3 mb-0'>
-                <a href='./projects.html' class='nav-link'>Projects</a>
-            </h5>
-            <h5 class='col-md-1 col-sm-3 mb-0'>
-                <a href='./assets/resume/' class='nav-link'>Resume</a>
-            </h5>
-        </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $('.collapse').collapse()
+    </script>
+    <header>
+        <ul class='nav justify-content-end flex-md-row flex-column'>
+            <li class='nav-item'>
+                <a class='nav-link' href='./index.html'>Home</a>
+            </li>
+            <li class='nav-item'>
+                <a class='nav-link' href="./projects.html">Projects</a>
+            </li>
+            <li class='nav-item'>
+                <a class='nav-link' href='#'>Resume</a>
+            </li>
+        </ul>
         <div class='title'>
             <h1 class='page-title text-center'>Projects</h1>
         </div>
     </header>
 
     <main>
-        <div class='project justify-content-center'>
+        <div class='container justify-content-center'>
             <h3 class='project-title text-center'>Stock Dashboard</h3>
-            <img src='./assets/images/stocks.jpg' class='project-img mx-auto d-block'>
-            <p class='project-description'></p>
+            <div class='project-img'>
+                <a href="https://github.com/KaleTEvans/stocksV2.git" target="_blank" class='project-pic'>
+                    <div class='project-box'>
+                        <img src='./assets/images/stocks.jpg' class='img-fluid mx-auto d-block project-view'>
+                        <div class='overlay'>
+                            <div class='text'>View GitHub</div>
+                        </div>
+                    </div>
+                </a>
+                <div class='accordion' id='stockProject'>
+                    <div class='card'>
+                        <div class='card-header' id='headingOne'>
+                            <h2 class='mb-0 text-center'>
+                                <button class="btn btn-link collapsed font-weight-bold text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Description
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#stockProject">
+                            <div class='card-body'>
+                                This is an ongoing side project I have been working on. Right now I have been pulling
+                                data from APIs such as the Yahoo Data API, AlphaVantage, and Stock News APIs. I believe the stock market lately
+                                has been heavily reactive to news and general sentiment, and I am trying to build a platform that can follow trends 
+                                and sentiment and combine a bit of technical analysis to produce stock recommendations. I also plan on adding my own API
+                                to save the recommended stokcs and follow their price movement in order to see which analysis methods work the best
+                                and iterate on my methods to produce more accurate predictions. 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <p class='project-description text-center'>This is an ongoing side project I have been working on. Right now I have been pulling
+                    data from APIs such as the Yahoo Data API, AlphaVantage, and Stock News APIs. I believe the stock market lately
+                    has been heavily reactive to news and general sentiment, and I am trying to build a platform that can follow trends 
+                    and sentiment and combine a bit of technical analysis to produce stock recommendations. I also plan on adding my own API
+                    to save the recommended stokcs and follow their price movement in order to see which analysis methods work the best
+                    and iterate on my methods to produce more accurate predictions. 
+                </p> -->
+            </div>
         </div>
     </main>
+    
 </body>
 </html>
