@@ -45,7 +45,7 @@ header {
 .nav-link:hover {
     text-decoration: none;
     color: black;
-    opacity: 0.8;
+    transform: scale(1.05);
 }
 
 .hero {
@@ -105,9 +105,13 @@ header {
   text-decoration: none;
 }
 
-/* Projects styles */
+/********* Projects styles **************/
 .title {
     padding: 100px 0 25px 0;
+}
+
+.project-title {
+    margin-top: 40px;
 }
 
 .project-img {
